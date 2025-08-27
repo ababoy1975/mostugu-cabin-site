@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostugu - Hafjell Ski Resort Cabin</title>
+    <!-- Use Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .hero-bg {
+            background-image: url('https://lh3.googleusercontent.com/d/11s6P0bxmJiWRGSGdePDqrpoSMegZpWr5');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Custom scrollbar for gallery */
+        .gallery-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .gallery-container::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-bold text-gray-900">Mostugu</div>
+            <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#home" class="hover:text-gray-900 transition-colors duration-300">Home</a>
+                <a href="#cabin" class="hover:text-gray-900 transition-colors duration-300">The Cabin</a>
+                <a href="#gallery" class="hover:text-gray-900 transition-colors duration-300">Gallery</a>
+                <a href="#resort" class="hover:text-gray-900 transition-colors duration-300">Hafjell Resort</a>
+                <a href="#contact" class="hover:text-gray-900 transition-colors duration-300">Enquire</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[70vh] md:h-[90vh] flex items-center justify-center text-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">Welcome to Mostugu</h1>
+            <p class="text-lg sm:text-xl md:text-2xl font-medium mb-8 animate-fade-in-up delay-200">Your perfect ski-in, ski-out retreat in Hafjell</p>
+            <a href="#contact" class="bg-white text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">Enquire Now</a>
+        </div>
+    </section>
+
+    <!-- The Cabin Section -->
+    <section id="cabin" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">The Cabin Experience</h2>
+            
+            <!-- New Description Section -->
+            <div class="text-lg text-gray-600 mb-12 space-y-8">
+                <p>
+                    Mostugu is a large, high-standard cabin designed for comfort and relaxation, perfect for family getaways or group trips.
+                    With spacious living areas and all the modern amenities you need, it's your home away from home in the mountains.
+                </p>
+                <p>
+                    Prime location at Mosetertoppen with both cross-country and alpine skiing opportunities, offering true ski-in/ski-out just behind the cabin (approx. 30 meters). About a 10-minute walk to Skavlen, Gondoltoppen, and Favn.
+                </p>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Ski-In/Ski-Out ⛷️</h3>
+                    <p>
+                        Hafjell offers some of the best alpine skiing in Norway. The resort boasts a total of 19 ski lifts, 30 slopes, and a 7 km long floodlit ski run. From Mostugu, you have direct ski-in/ski-out access, allowing you to hit the slopes directly from your doorstep and return home just as easily.
+                    </p>
+                    <p class="mt-2">
+                        The illuminated trail is located approximately 30 meters behind the cabin, allowing you to “glide” directly into the alpine area about 200 meters downhill. You can also take your cross-country skis along the trail into the extensive network of groomed cross-country tracks (a total of 600 km).
+                    </p>
+                    <p class="mt-2">
+                        To return to the cabin from the alpine area, take the shuttle lift back to Mosetertoppen and ski down from there.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Two Bathrooms 🚽</h3>
+                    <p>
+                        The cabin features two bathrooms with showers and toilets on the lower level. One bathroom includes a washing machine, and the other is equipped with a sauna.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Two Living Areas 🛋️</h3>
+                    <p>
+                        There is a spacious living room on the lower level connected to the kitchen and dining area, featuring a 32” smart TV. Additionally, there is a TV lounge on the upper level with a 50” smart TV, designed for children with a sofa, armchairs, and a selection of children’s movies.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Child-Friendly 🧒</h3>
+                    <p>
+                        The cabin includes two IKEA high chairs and a travel cot, available for use as needed.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Existing Feature Cards Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cabin Feature Cards -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm text-center transform transition-transform hover:scale-105 duration-300">
+                    <span class="text-4xl mb-4 block">🛌</span>
+                    <h3 class="text-xl font-bold mb-2">5 Bedrooms</h3>
+                    <p class="text-gray-600">Comfortable accommodation for 12-14 people.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm text-center transform transition-transform hover:scale-105 duration-300">
+                    <span class="text-4xl mb-4 block">🚽</span>
+                    <h3 class="text-xl font-bold mb-2">2 Bathrooms</h3>
+                    <p class="text-gray-600">Well-equipped and spacious bathrooms.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm text-center transform transition-transform hover:scale-105 duration-300">
+                    <span class="text-4xl mb-4 block">🔥</span>
+                    <h3 class="text-xl font-bold mb-2">Fireplace</h3>
+                    <p class="text-gray-600">Cozy up by the fire after a day on the slopes.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm text-center transform transition-transform hover:scale-105 duration-300">
+                    <span class="text-4xl mb-4 block">⚡️🚗</span>
+                    <h3 class="text-xl font-bold mb-2">EV Charger</h3>
+                    <p class="text-gray-600">Convenient electric car charging available.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm text-center transform transition-transform hover:scale-105 duration-300">
+                    <span class="text-4xl mb-4 block">📶</span>
+                    <h3 class="text-xl font-bold mb-2">Wifi</h3>
+                    <p class="text-gray-600">Stay connected with high-speed internet.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm text-center transform transition-transform hover:scale-105 duration-300">
+                    <span class="text-4xl mb-4 block">🧖</span>
+                    <h3 class="text-xl font-bold mb-2">Sauna</h3>
+                    <p class="text-gray-600">Relax and rejuvenate in your private sauna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Image Gallery</h2>
+            <div class="flex justify-center space-x-4 mb-8">
+                <button id="interior-btn" class="bg-gray-800 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-gray-600">Interior</button>
+                <button id="exterior-btn" class="bg-white text-gray-800 font-bold py-2 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-gray-300">Exterior</button>
+            </div>
+            
+            <!-- Interior Gallery -->
+            <div id="interior-gallery" class="gallery-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-auto p-4 md:overflow-visible">
+                <!-- Interior Images -->
+                <img src="https://lh3.googleusercontent.com/d/1go4Xswa15lkGqpWKwdBd3iGk9z95aDJZ" alt="Interior image 1" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1g3wnwLDVOT507xFdQY1Ek08pEetQr1vM" alt="Interior image 2" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1_cMpFWBu74o_X3Th_RZwLRav0RrHDDCX" alt="Interior image 3" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1KdkaE1p3cO2NXCN-reCqWXxE31jBD-be" alt="Interior image 4" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1LDPHVZ6XBocyaE_2eBgvgf3tl6KbUM0J" alt="Interior image 5" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1M5QF0GvMSPMTdsUUk-x4dxhfFqGTb2v4" alt="Interior image 6" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1sf2u5oVqeqlAzLdd4LFUwJj3oF130Hzj" alt="Interior image 7" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1N13WTuoxwNhg-3v9lx0ieOVBL8Owe9yG" alt="Interior image 8" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/13pC7N0aUFktV8KQxZp2pPu7W03hI_J8V" alt="Interior image 9" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1-7l7Euu0gogJv9KbLvppVcqN22mMDMan" alt="Interior image 10" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+            </div>
+
+            <!-- Exterior Gallery (Hidden by default) -->
+            <div id="exterior-gallery" class="gallery-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-auto p-4 md:overflow-visible hidden">
+                <!-- Exterior Images -->
+                <img src="https://lh3.googleusercontent.com/d/1L0xYadmud_i4t1o48X5H942AMVdo8-w6" alt="Exterior image 1" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1ehfNU3r4cbslgC2JR8sp23zNTZrunf16" alt="Exterior image 2" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1JGW61Za2LW78zZorb7D4g3x7l5r1hRPJ" alt="Exterior image 3" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/16SxByPK33mepNzcUdPe8um-dSd4fAKMW" alt="Exterior image 4" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+                <img src="https://lh3.googleusercontent.com/d/1gprpuZ8QNrxGsPQAaYK3hUjgKcsXZhBm" alt="Exterior image 5" class="w-full h-auto rounded-lg shadow-md transform transition-transform hover:scale-105 duration-300">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hafjell Resort Section -->
+    <section id="resort" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Explore Hafjell Ski Resort</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Getting There -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">📍 Getting There from Oslo</h3>
+                    <p class="text-gray-600 mb-4">
+                        Hafjell is easily accessible from Oslo, making it a convenient destination for a mountain escape.
+                    </p>
+                    <ul class="list-none space-y-4 text-gray-700">
+                        <li>
+                            <span class="font-bold">By Car 🚗:</span> The drive from Oslo takes approximately 2.5 hours (around 190 km) via the E6 highway. The roads are well-maintained and offer scenic views.
+                        </li>
+                        <li>
+                            <span class="font-bold">By Train 🚆:</span> You can take the train from Oslo Central Station to Lillehammer, which takes about 2 hours. From Lillehammer, it's a short bus or taxi ride (15-20 min) to Hafjell.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Seasonal Activities -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">🗓️ Activities All Season</h3>
+                    <p class="text-gray-600 mb-4">
+                        Hafjell offers a wide range of activities for every season, catering to both adventure seekers and those looking to relax.
+                    </p>
+                    <div class="flex space-x-8">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Summer ☀️</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>Hiking 🥾</li>
+                                <li>Downhill Cycling 🚵‍♀️</li>
+                                <li>Mountain Biking 🚴</li>
+                                <li>Fishing 🎣</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Winter ❄️</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>Downhill Skiing ⛷️</li>
+                                <li>Cross-country Skiing 🎿</li>
+                                <li>Ski-in, Ski-out access 🚶‍♂️</li>
+                                <li>Snowshoeing 👟</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability & Contact Form -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Enquire Availability</h2>
+            <p class="text-center text-gray-600 mb-8">
+                Ready to book your stay at Mostugu? Fill out the form below and we will get back to you shortly.
+            </p>
+            <form id="contact-form" class="space-y-6 bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                <div>
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gray-800 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-900 transition-colors transform hover:scale-105 duration-300">Send Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold mb-2">Mostugu - Hafjell</p>
+            <p class="text-sm text-gray-400">Storslåvegen 42, 2636 Øyer, Norway</p>
+            <p class="text-sm mt-4 text-gray-500">&copy; 2024 Mostugu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for form and gallery functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const interiorBtn = document.getElementById('interior-btn');
+            const exteriorBtn = document.getElementById('exterior-btn');
+            const interiorGallery = document.getElementById('interior-gallery');
+            const exteriorGallery = document.getElementById('exterior-gallery');
+            const contactForm = document.getElementById('contact-form');
+
+            // Function to show interior gallery
+            const showInterior = () => {
+                interiorGallery.classList.remove('hidden');
+                exteriorGallery.classList.add('hidden');
+                interiorBtn.classList.add('bg-gray-800', 'text-white');
+                interiorBtn.classList.remove('bg-white', 'text-gray-800');
+                exteriorBtn.classList.remove('bg-gray-800', 'text-white');
+                exteriorBtn.classList.add('bg-white', 'text-gray-800');
+            };
+
+            // Function to show exterior gallery
+            const showExterior = () => {
+                exteriorGallery.classList.remove('hidden');
+                interiorGallery.classList.add('hidden');
+                exteriorBtn.classList.add('bg-gray-800', 'text-white');
+                exteriorBtn.classList.remove('bg-white', 'text-gray-800');
+                interiorBtn.classList.remove('bg-gray-800', 'text-white');
+                interiorBtn.classList.add('bg-white', 'text-gray-800');
+            };
+
+            // Event listeners for gallery buttons
+            interiorBtn.addEventListener('click', showInterior);
+            exteriorBtn.addEventListener('click', showExterior);
+
+            // Initial state: show interior gallery
+            showInterior();
+
+            // Handle form submission to create a mailto link
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // The email address is hidden here
+                const recipient = 'norma.lovhaugen@gmail.com';
+                const subject = encodeURIComponent(`Mostugu Availability Enquiry from ${name}`);
+                const body = encodeURIComponent(`Hello,
+
+I would like to enquire about the availability of Mostugu.
+
+Sender Name: ${name}
+Sender Email: ${email}
+
+Message:
+${message}
+
+Thank you.`);
+
+                window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+            });
+        });
+    </script>
+</body>
+</html>
